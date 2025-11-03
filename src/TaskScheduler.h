@@ -300,6 +300,9 @@ v4.0.2:
     2025-10-09:
         - added unit test for _TASK_THREAD_SAFE functionality
 
+v4.0.3:
+    2025-11-02:
+        - bug: next execution time with _TASK_TICKLESS did not take task timeout into account
 */
 
 #include "TaskSchedulerDeclarations.h"
@@ -1674,6 +1677,11 @@ bool Scheduler::execute() {
                     unsigned long nextrun = iCurrent->iDelay + iCurrent->iPreviousMillis;
                     // nextrun should be after current millis() (except rollover)
                     // nextrun should be sooner than previously determined
+#ifdef _TASK_TIMEOUT
+                    // in case timeout is set - we have to consider it as well
+                    unsigned long untilto = iCurrent->untilTimeout() + iCurrent->iPreviousMillis;
+                    if ( untilto < nextrun ) nextrun = untilto;
+#endif  // _TASK_TIMEOUT
                     if ( nextrun > m && nextrun < nr ) { 
                         nr = nextrun;
                         nrd |= _TASK_NEXTRUN_TIMED; // next run timed
