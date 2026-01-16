@@ -303,6 +303,10 @@ v4.0.2:
 v4.0.3:
     2025-11-02:
         - bug: next execution time with _TASK_TICKLESS did not take task timeout into account
+
+v4.0.4:
+    2025-11-15:
+        - bug: set callbacks should not be available for _TASK_OO_CALLBACKS mode
 */
 
 #include "TaskSchedulerDeclarations.h"
@@ -1491,6 +1495,7 @@ void Scheduler::processRequests() {
         }
         break;
 
+#ifndef _TASK_OO_CALLBACKS
         case TASK_REQUEST_SETCALLBACK_1: {
             Task* t = (Task*) req.object_ptr;
             t->setCallback((TaskCallback)req.param1);
@@ -1508,6 +1513,7 @@ void Scheduler::processRequests() {
             t->setOnDisable((TaskOnDisable)req.param1);
         }
         break;
+#endif // _TASK_OO_CALLBACKS
 
         default:
         break;
