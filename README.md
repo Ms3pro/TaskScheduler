@@ -4,7 +4,7 @@
 
 [![arduino-library-badge](https://www.ardu-badge.com/badge/TaskScheduler.svg?)](https://www.ardu-badge.com/TaskScheduler)
 
-#### Delivering robust embedded systems and firmware that perform flawlessly in real-world conditions [smart solutions for smart devices](https://smart4smart.com/)
+#### Delivering robust embedded systems and firmware that perform flawlessly in real-world conditions. [smart solutions for smart devices](https://smart4smart.com/)
 
 [![github](https://github.com/arkhipenko/resources/blob/master/smart4smart_large.gif)](https://smart4smart.com/)
 ---
@@ -155,3 +155,7 @@ There is no such thing as enough testing. If you come up with another test scena
 
 * Interactive Halloween Pumpkin (Arduino Uno)
     (http://www.instructables.com/id/Interactive-Halloween-Pumpkin/)
+
+
+---
+[![github](https://github.com/arkhipenko/resources/blob/master/smart4smart_hero_banner.gif)](https://smart4smart.com/)
