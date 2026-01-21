@@ -4,9 +4,9 @@
 
 [![arduino-library-badge](https://www.ardu-badge.com/badge/TaskScheduler.svg?)](https://www.ardu-badge.com/TaskScheduler)
 
-#### Get expedited support or integration consultation for TaskScheduler [from xs:code](https://xscode.com/arkhipenko/TaskScheduler)
+#### Delivering robust embedded systems and firmware that perform flawlessly in real-world conditions [smart solutions for smart devices](https://smart4smart.com/)
 
-[![github](https://github.com/arkhipenko/resources/blob/master/taskscheduler-banner.png)](https://github.com/arkhipenko/TaskScheduler)
+[![github](https://github.com/arkhipenko/resources/blob/master/smart4smart_large.gif)](https://smart4smart.com/)
 ---
 
 ### OVERVIEW:
